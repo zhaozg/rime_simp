@@ -1,0 +1,21 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.9.30
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Feb  8 20:24:37 2018"
+  rime_version: 1.2.9
+patch:
+  app_options:
+    chrome.exe: {ascii_mode: true}
+    cmd.exe: {ascii_mode: true}
+    conemu64.exe: {ascii_mode: true}
+    nvim.exe: {ascii_mode: true}
+    scite.exe: {ascii_mode: true}
+    totalcmd.exe: {ascii_mode: true}
+  style:
+    color_scheme: dark_temple
+    display_tray_icon: false
+    font_face: "Microsoft YaHei"
+    horizontal: true
+    inline_preedit: true
+  "style/color_scheme": dark_temple
