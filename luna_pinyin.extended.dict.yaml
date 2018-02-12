@@ -1,0 +1,15 @@
+# encoding: utf-8
+# Rime dictionary
+
+---
+name: luna_pinyin.extended
+version: "2018.02.11"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin
+  - luna_pinyin.daily
+  - luna_pinyin.computer
+  - luna_pinyin.almighty
+  - luna_pinyin.poetry
+...
