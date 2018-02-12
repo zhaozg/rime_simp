@@ -2,12 +2,21 @@
 # encoding: utf-8
 patch:
   schema:
+    schema_id: luna_pinyin_fluency
+    name: 朙月拼音·語句流
+    version: "0.26"
+    author:
+      - 佛振 <chen.sst@gmail.com>
+    description: |
+      朙月拼音·語句流錄入！
+      以空格分詞、標點或回車上屏。
     dependencies:
+      - stroke
       - luna_pinyin.extended
   switches:
     # 默认输入ASCII字符
     - name: ascii_mode
-      reset: 0                # reset 0 的作用是當從其他輸入方案切換到本方案時，
+      reset: 1                 # reset 0 的作用是當從其他輸入方案切換到本方案時，
       states: [ 中文, 西文 ]   # 重設爲指定的狀態，而不保留在前一個方案中設定的狀態。
     - name: full_shape
       states: [ 半角, 全角 ]   # 而全／半角則可沿用之前方案中的用法。
