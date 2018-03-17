@@ -17,5 +17,8 @@ patch:
     display_tray_icon: false
     font_face: "Microsoft YaHei"
     horizontal: true
-    inline_preedit: true
-  "style/color_scheme": dark_temple
+    fullscreen: false
+    inline_preedit: false
+    preedit_type: composition
+    label_format: "%s."
+  
