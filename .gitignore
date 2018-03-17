@@ -1,5 +1,5 @@
 /build
 /luna_pinyin
-/*.kct
+/luna_pinyin.userdb
 /installation.yaml
 /user.yaml
