@@ -11,7 +11,6 @@ patch:
       朙月拼音·語句流錄入！
       以空格分詞、標點或回車上屏。
     dependencies:
-      - stroke
       - luna_pinyin.extended
   switches:
     # 默认输入ASCII字符
