@@ -10,8 +10,6 @@ patch:
     description: |
       朙月拼音·語句流錄入！
       以空格分詞、標點或回車上屏。
-    dependencies:
-      - luna_pinyin.extended
   switches:
     # 默认输入ASCII字符
     - name: ascii_mode
@@ -25,4 +23,4 @@ patch:
     - name: ascii_punct
       states: [ 。，, ．， ]
   translator:
-    dictionary: luna_pinyin.extended
+    dictionary: luna_pinyin
