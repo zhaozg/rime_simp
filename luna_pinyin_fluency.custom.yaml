@@ -23,4 +23,4 @@ patch:
     - name: ascii_punct
       states: [ 。，, ．， ]
   translator:
-    dictionary: luna_pinyin
+    dictionary: luna_pinyin.extended

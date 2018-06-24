@@ -82,7 +82,7 @@ speller:
     #- abbrev/^(.).+$/$1/
 
 translator:
-  dictionary: luna_pinyin
+  dictionary: luna_pinyin.extended
   prism: double_pinyin
   preedit_format:
     - xform/([bpmnljqxy])n/$1in/
