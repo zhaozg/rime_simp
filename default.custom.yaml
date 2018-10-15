@@ -40,6 +40,8 @@ patch:
     switch_key:
       Shift_L: commit_code
       Shift_R: commit_code
+  "punctuator/import_preset": symbols
+  "recognizer/patterns/punct": "^/([A-Z|a-z]*|[0-9]|10)$"
 var:
   option:
     simplification: true

@@ -2,7 +2,7 @@ patch:
   style:
     color_scheme: dark_temple
     display_tray_icon: false
-    font_face: "微软雅黑"
+    font_face: "SFMono-Regular"
     horizontal: true        # 候選窗横向顯示
     inline_preedit: false    # 非內嵌編碼行
     font_point: 24          # 字號
