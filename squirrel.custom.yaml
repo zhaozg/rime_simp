@@ -15,9 +15,11 @@ patch:
     io.alacritty:
       ascii_mode: true
       no_inline: true
+      vim_mode: true
     com.googlecode.iterm2:
       ascii_mode: true
       no_inline: true
+      vim_mode: true
     cn.wps.wpsoffice:
       ascii_mode: false
       no_inline: true
