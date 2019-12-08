@@ -2,7 +2,7 @@ customization:
   distribution_code_name: ""
   distribution_version: ""
   generator: "Rime::SwitcherSettings"
-  modified_time: "Sun Dec  8 18:42:14 2019"
+  modified_time: "Sun Dec  8 20:07:20 2019"
   rime_version: 1.5.3
 patch:
   ascii_composer:
@@ -15,7 +15,6 @@ patch:
   schema_list:
     - {schema: double_pinyin}
     - {schema: luna_pinyin}
-    - {schema: luna_pinyin_simp}
   "style/horizontal": false
   switcher:
     abbreviate_options: true
