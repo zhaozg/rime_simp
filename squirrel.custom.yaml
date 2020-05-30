@@ -2,7 +2,7 @@ patch:
   style:
     color_scheme: dark_temple
     display_tray_icon: false
-    font_face: "SFMono-Regular"
+    font_face: ".PingFang SC,Hack Regular Nerd Font,HanaMinA,HanaMinB"
     horizontal: true        # 候選窗横向顯示
     inline_preedit: true    # 非內嵌編碼行
     font_point: 24          # 字號
