@@ -1,13 +1,11 @@
 # encoding: utf-8
-customization:
-  generator: "Rime::SwitcherSettings"
-  rime_version: 1.5.3
 patch:
   menu:
-    page_size: 10
+    page_size: 9
   schema_list:
-    - {schema: luna_pinyin}
     - {schema: double_pinyin}
+    - {schema: luna_pinyin}
+    - {schema: luna_pinyin_fluency}
   style/horizontal: false
   switcher:
     abbreviate_options: true
