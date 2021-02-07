@@ -1,7 +1,11 @@
-# encoding: utf-8
 patch:
+  ascii_composer:
+    good_old_caps_lock: false
+    switch_key: {Shift_L: commit_code, Shift_R: commit_code}
   menu:
     page_size: 9
+  punctuator/import_preset: symbols
+  recognizer/patterns/punct: "^/([A-Z|a-z]*|[0-9]|10)$"
   schema_list:
     - {schema: double_pinyin}
     - {schema: luna_pinyin}
@@ -14,13 +18,6 @@ patch:
     hotkeys: ["Control+grave", "Control+Shift+F4"]
     option_list_separator: "／"
     save_options: [full_shape, ascii_punct, simplification, extended_charset]
-  ascii_composer:
-    good_old_caps_lock: false
-    switch_key:
-      Shift_L: commit_code
-      Shift_R: commit_code
-  "punctuator/import_preset": symbols
-  "recognizer/patterns/punct": "^/([A-Z|a-z]*|[0-9]|10)$"
 var:
   option:
     simplification: true
