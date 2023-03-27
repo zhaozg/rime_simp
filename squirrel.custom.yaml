@@ -17,8 +17,9 @@ patch:
       ascii_mode: true
       no_inline: true
       vim_mode: true
-    com.qvacua.VimR:
+    com.neovide.neovide:
       ascii_mode: true
+      no_inline: true
       vim_mode: true
     com.googlecode.iterm2:
       ascii_mode: true
