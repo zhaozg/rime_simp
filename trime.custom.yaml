@@ -1,39 +1,14 @@
 # trime.custom.yaml
+# 配置详情请见 https://github.com/osfans/trime/wiki/trime.yaml%E8%A9%B3%E8%A7%A3
 
-#style
-# auto_caps: 自动句首大写（true:打开;false:关闭;ascii:仅英文模式句首大写）
-# candidate_use_cursor: 候选焦点高亮（true:打开;false:关闭）
-# comment_on_top: 候选项注释在上方或右侧 （true:在上方；false:在右侧）
-# horizontal： 水平模式。改变方向键的功能 （true：方向键适配横排候选；false：方向键适配竖排候选）
-# keyboards: 键盘配置。除主键盘外，其它需要用到的键盘都要在这里声明。
-# proximity_correction: 将按键之间的空白区域分配给相邻的按键，避免空按（true:打开；false:关闭）
-# reset_ascii_mode: 不同进程中显示键盘时重置为中文状态（true:重置为中文；false:记忆中英状态）
-# latin_locale: 在英文状态（ascii_mode）下，朗读按键时所用的语言。
-# locale: 在中文状态下，朗读上屏文本和按键时所用的语言。
-# ※ 需要先在同文设置界面开启朗读功能。朗读功能还需要手机的TTS引擎支持。可使用系统默认引擎，也可安装讯飞语记等第三方引擎。latin_local和local可以设置的语言也取决于 TTS 引擎。常见的语言：zh_TW, zh_CN, zh_HK, en_US, ja_JP, ko_KR,……
-# speech_opencc_config: 语音输入简繁转换（默认值s2t.json: 将语音识别的结果转换成繁体再上屏）
-# 需要配合OpenCC组件来使用。转换的选项有：
-# s2t.json #简体→繁体
-# t2s.json #繁体→简体
-# s2hk.json #简体→香港繁体
-# hk2s.json #香港繁体→简体
-# s2tw.json #简体→台湾繁体
-# s2twp.json #简体→台湾繁体，并转换常用词汇（网络→網路）
-# tw2s.json #台湾繁体→简体
-# tw2sp.json #台湾繁体→简体，并转换常用词汇（作業系統→操作系统）
-# t2hk.json #OpenCC标准繁体→香港繁体
-# t2tw.json #OpenCC标准繁体→台湾繁体
-# 如果不需要转换，想让语音引擎按原样输出，可设为none。(2017-9-13开始，也可以直接注释掉)
-# ⚠ 同文输入法的语音输入依赖的是手机的「语音识别服务」，而且必须安装「讯飞语记」或者「讯飞语音+」才能使用。
-
-patch:  
+patch:
   "style/auto_caps": false
   "style/candidate_use_cursor": true
-  "style/symbol_font": HanaMinB.ttf
   "style/color_scheme": dark_temple
-  "preset_keyboards/luna_pinyin/import_preset": qwerty0
-  "preset_keyboards/double_pinyin/import_preset": qwerty0
-  "preset_keyboards/qwerty0/keys/@28/long_click": Up
-  "preset_keyboards/qwerty0/keys/@29/long_click": Right
-  "preset_keyboards/qwerty0/keys/@38/long_click": ":"
+  "style/hanb_font": HanaMinB.ttf
+  "style/keyboard_padding_land": 60       # 横屏模式下，屏幕左右两侧与键盘的距离（避免横屏按键过度拉伸变形）
+  "style/keyboard_padding_land_bottom": 4 # 横屏模式下，屏幕下侧与键盘的距离
 
+  # 长按空格变成 Tab
+  "preset_keyboards/qwerty/keys/@33/long_click": Tab
+  "preset_keyboards/qwerty/keys/@29/long_click": Keyboard_switch
