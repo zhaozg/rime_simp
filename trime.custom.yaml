@@ -5,10 +5,6 @@ patch:
   "style/auto_caps": false
   "style/candidate_use_cursor": true
   "style/color_scheme": dark_temple
-  "style/hanb_font": HanaMinB.ttf
+  "style/hanb_font": BabelStoneHan.ttf
   "style/keyboard_padding_land": 60       # 横屏模式下，屏幕左右两侧与键盘的距离（避免横屏按键过度拉伸变形）
   "style/keyboard_padding_land_bottom": 4 # 横屏模式下，屏幕下侧与键盘的距离
-
-  # 长按空格变成 Tab
-  "preset_keyboards/qwerty/keys/@33/long_click": Tab
-  "preset_keyboards/qwerty/keys/@29/long_click": Keyboard_switch

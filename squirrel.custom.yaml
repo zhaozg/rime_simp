@@ -2,7 +2,6 @@ patch:
   style:
     color_scheme: dark_temple
     display_tray_icon: false
-    font_face: "PingFang SC,Hack Regular Nerd Font,HanaMinA,HanaMinB"
     horizontal: true        # 候選窗横向顯示
     inline_preedit: true    # 非內嵌編碼行
     font_point: 20          # 字號
@@ -10,10 +9,15 @@ patch:
     border_height: 0        # 窗口邊界高度，大於圓角半徑才有效果
     border_width: 0         # 窗口邊界寬度，大於圓角半徑才有效果
     candidate_format: '%c %@'
+    font_face: "霞鹜文楷等宽, BabelStone Han"  #候选词字体
+    label_font_face: 'Hack Regular Nerd Font,PingFang SC'
+    label_font_point: 18
+    comment_font_face: 'PingFang SC,霞鹜新晰黑'
+    comment_font_point: 18
   app_options:
     com.apple.Xcode:
       ascii_mode: true
-    io.alacritty:
+    org.alacritty:
       ascii_mode: true
       no_inline: true
       vim_mode: true
