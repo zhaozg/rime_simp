@@ -18,6 +18,7 @@ switches:
     states: [ 半角, 全角 ]
   - name: simplification
     states: [ 漢字, 汉字 ]
+    reset: 1                # 增加這一行：默認啓用「繁→簡」轉換。
   - name: ascii_punct
     states: [ 。，, ．， ]
 
