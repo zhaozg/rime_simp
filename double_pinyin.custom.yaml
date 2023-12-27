@@ -1,10 +1,20 @@
 patch:
-  'engine/processors/@after 0': predictor
-  'engine/translators/@before 0': predict_translator
-  'switches/+':
+  'switches':
+    - name: ascii_mode
+      reset: 1
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      states: [ 漢字, 汉字 ]
+      reset: 1                # 增加這一行：默認啓用「繁→簡」轉換。
+    - name: ascii_punct
+      states: [ 。，, ．， ]
     - name: prediction
       states: [ 关闭预测, 开启预测 ]
       reset: 1
+  'engine/processors/@after 0': predictor
+  'engine/translators/@before 0': predict_translator
   predictor:
     db: predict.db
     max_iterations: 3

@@ -22,5 +22,15 @@ patch:
       states: [ 漢字, 汉字 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
+    - name: prediction
+      states: [ 关闭预测, 开启预测 ]
+      reset: 1
   translator:
     dictionary: luna_pinyin.extended
+  'engine/processors/@after 0': predictor
+  'engine/translators/@before 0': predict_translator
+  predictor:
+    db: predict.db
+    max_iterations: 3
+    max_candidates: 5
+  __include: grammar:/hans
