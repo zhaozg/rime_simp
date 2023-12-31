@@ -22,6 +22,9 @@ switches:
   - name: ascii_punct
     states: [ 。，, ．， ]
 
+simplifier:
+  option_name: simplification
+
 engine:
   processors:
     - ascii_composer
@@ -129,3 +132,10 @@ recognizer:
   import_preset: default
   patterns:
     reverse_lookup: "`[a-z]*'?$"
+
+__patch:
+  # 使用八股文語言模型
+  - grammar:/hans?
+  # 用家自選配置
+  - double_pinyin.custom:/patch?
+

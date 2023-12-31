@@ -17,7 +17,6 @@ patch:
     fold_options: true
     hotkeys: ["Control+grave", "Control+Shift+F4"]
     option_list_separator: "／"
-    save_options: [full_shape, ascii_punct, simplification, extended_charset]
 var:
   option:
     simplification: true
