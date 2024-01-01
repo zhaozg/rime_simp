@@ -17,6 +17,3 @@ patch:
     fold_options: true
     hotkeys: ["Control+grave", "Control+Shift+F4"]
     option_list_separator: "／"
-var:
-  option:
-    simplification: true

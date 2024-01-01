@@ -22,9 +22,6 @@ switches:
   - name: ascii_punct
     states: [ 。，, ．， ]
 
-simplifier:
-  option_name: simplification
-
 engine:
   processors:
     - ascii_composer
