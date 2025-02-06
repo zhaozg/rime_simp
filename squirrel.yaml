@@ -33,6 +33,8 @@ style:
   mutual_exclusive: false
   # Whether to use a translucent background. Only visible when background color is transparent
   translucency: false
+  # Enable to show small arrows that indicates if paging up/down is possible
+  show_paging: false
 
   corner_radius: 7
   hilited_corner_radius: 0
@@ -56,11 +58,11 @@ style:
   # adjust the base line of text
   #base_offset: 0
   font_face: 'Avenir'
-  #font_point: 15
+  font_point: 16
   #label_font_face: 'Avenir'
   #label_font_point: 12
   #comment_font_face: 'Avenir'
-  #comment_font_point: 15
+  #comment_font_point: 16
 
 preset_color_schemes:
   native:
@@ -154,7 +156,7 @@ preset_color_schemes:
   purity_of_form:
     name: 純粹的形式／Purity of Form
     author: 雨過之後、佛振
-    text_color: 0xc2c2c2
+    text_color: 0xc2c222
     back_color: 0x444444
     candidate_text_color: 0xeeeeee
     hilited_text_color: 0xeeeeee
@@ -185,6 +187,7 @@ preset_color_schemes:
     hilited_text_color: 0xfecb96
     hilited_back_color: 0x000000
     hilited_candidate_text_color: 0x70ffaf
+    hilited_candidate_label_color: 0x40cf7f
     hilited_candidate_back_color: 0x00000000
     comment_text_color: 0x1010d0
     hilited_comment_text_color: 0x1010f0
@@ -219,7 +222,7 @@ preset_color_schemes:
   clean_white:
     name: 简约白／Clean White
     author: Chongyu Zhu <lembacon@gmail.com>, based on 搜狗「简约白」
-    horizontal: true
+    candidate_list_layout: linear
     candidate_format: '%c %@'
     corner_radius: 6
     border_height: 6
@@ -239,7 +242,7 @@ preset_color_schemes:
   apathy:
     name: 冷漠／Apathy
     author: LIANG Hai
-    horizontal: true  # 水平排列
+    candidate_list_layout: linear  # 水平排列
     inline_preedit: true #单行显示，false双行显示
     candidate_format: "%c\u2005%@\u2005"  # 编号 %c 和候选词 %@ 前后的空间
     corner_radius: 5  #候选条圆角
@@ -258,7 +261,7 @@ preset_color_schemes:
   dust:
     name: 浮尘／Dust
     author: Superoutman <asticosmo@gmail.com>
-    horizontal: true  # 水平排列
+    candidate_list_layout: linear  # 水平排列
     inline_preedit: true #单行显示，false双行显示
     candidate_format: "%c\u2005%@\u2005"  # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 2  #候选条圆角
@@ -283,7 +286,7 @@ preset_color_schemes:
   mojave_dark:
     name: 沙漠夜／Mojave Dark
     author: xiehuc <xiehuc@gmail.com>
-    horizontal: true                        # 水平排列
+    candidate_list_layout: linear           # 水平排列
     inline_preedit: true                    # 单行显示，false双行显示
     candidate_format: "%c\u2005%@"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 5                        # 候选条圆角
