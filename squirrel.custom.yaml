@@ -5,7 +5,7 @@ patch:
     text_orientation: horizontal  # horizontal | vertical # 候選窗横向顯示
     candidate_list_layout: linear
     inline_preedit: true    # 非內嵌編碼行
-    font_point: 20          # 字號
+    font_point: 28          # 字號
     corner_radius: 5        # 窗口圓角半徑
     border_height: 0        # 窗口邊界高度，大於圓角半徑才有效果
     border_width: 0         # 窗口邊界寬度，大於圓角半徑才有效果
